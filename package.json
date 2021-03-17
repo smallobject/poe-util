@@ -1,0 +1,21 @@
+{
+  "name": "poe-util",
+  "version": "1.0.1",
+  "description": "A utility for the Path Of Exile API, includes stashes, ladders, characters, trade searching, etc.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "poe",
+    "pathofexile",
+    "grindinggeargames",
+    "ggg",
+    "poe api"
+  ],
+  "author": "smallobject",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
