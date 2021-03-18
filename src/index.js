@@ -69,12 +69,13 @@ const getLadder = async (league, limit) => {
 };
 
 //Start the function and set the initial state
-function apiCall() {
+function startItemApi() {
   const state = {
     itemIds: [],
     index: 0,
     offset: 10,
   };
+
   //Fetch the API for the results and then send it to itemIds state
   function fetchSearchResults(searchedItem, league) {
     return axios
@@ -119,5 +120,5 @@ module.exports = {
   getAccountCharacters,
   getCharacterItems,
   getLadder,
-  apiCall,
+  startItemApi,
 };
