@@ -68,6 +68,19 @@ const getLadder = async (league, limit) => {
   return getLadderApiCall.data;
 };
 
+//Get current passive skills from character
+const getPassiveSkills = async (account, character) => {
+  const getPassiveSkillsApiCall = await axios
+    .get(
+      `${apiURL}/character-window/get-passive-skills?accountName=${account}&character=${character}`
+    )
+    .then((data) => data)
+    .catch((error) => {
+      console.log('Error', error);
+    });
+  return getPassiveSkillsApiCall.data;
+};
+
 //Start the function and set the initial state
 function startItemApi() {
   const state = {
@@ -121,4 +134,5 @@ module.exports = {
   getCharacterItems,
   getLadder,
   startItemApi,
+  getPassiveSkills,
 };
