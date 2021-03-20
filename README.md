@@ -1,4 +1,5 @@
 # Installation
+* [Changelogs](https://github.com/smallobject/poe-util/blob/main/CHANGELOG.md)
 
 poe-util is a Path of Exile utility that warps around the Path of Exile official API. You can search for items, stashes, guilds, ladders, etc. This is not meant to be a final solution for anyone, although you can use it as one. It's meant to be a helper tool to get you started.
 
