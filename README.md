@@ -64,7 +64,7 @@ Returns an array of the characters items and includes full item properties.
 > limit: The number of results you want to retrieve, default: 20, maximum: 200.
 
 ```
-Returns an array current ladder stastics including full character information.
+Returns an array current ladder statistics including full character information.
 ```
 
 ## Fetching Items
@@ -74,7 +74,7 @@ Returns an array current ladder stastics including full character information.
 const poe = require('poe-util');
 
 //Start by assigning the startItemApi
-//This will assing the state inside the function
+//This will assign the state inside the function
 const query = poe.startItemApi();
 
 //Use the new assigned variable to call fetchSearchResults(); and fetchItems();
