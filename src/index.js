@@ -81,6 +81,28 @@ const getPassiveSkills = async (account, character) => {
   return getPassiveSkillsApiCall.data;
 };
 
+//Get item prefixes and suffixes from the API
+const getItemStats = async () => {
+  const getItemStatsApiCall = await axios
+    .get(`${apiURL}/api/trade/data/stats`)
+    .then((data) => data)
+    .catch((error) => {
+      console.log('Error', error);
+    });
+  return getItemStatsApiCall.data;
+};
+
+//Get static items, such as images, names and tiers of maps, currency, etc
+const getStaticData = async () => {
+  const getStaticDataApiCall = await axios
+    .get(`${apiURL}/api/trade/data/static`)
+    .then((data) => data)
+    .catch((error) => {
+      console.log('Error', error);
+    });
+  return getStaticDataApiCall.data;
+};
+
 //Start the function and set the initial state
 function startItemApi() {
   const state = {
@@ -135,4 +157,6 @@ module.exports = {
   getLadder,
   startItemApi,
   getPassiveSkills,
+  getItemStats,
+  getStaticData,
 };
