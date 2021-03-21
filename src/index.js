@@ -103,6 +103,17 @@ const getStaticData = async () => {
   return getStaticDataApiCall.data;
 };
 
+//Get item names and types, this is how I would suggest to search the API, send these.
+const getItemData = async () => {
+  const getItemDataApiCall = await axios
+    .get(`${apiURL}/api/trade/data/items`)
+    .then((data) => data)
+    .catch((error) => {
+      console.log('Error', error);
+    });
+  return getItemDataApiCall.data;
+};
+
 //Start the function and set the initial state
 function startItemApi() {
   const state = {
@@ -159,4 +170,5 @@ module.exports = {
   getPassiveSkills,
   getItemStats,
   getStaticData,
+  getItemData,
 };
