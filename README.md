@@ -12,7 +12,7 @@ npm install poe-util
 
 Add poe-util to your project
 
-```javascript
+```js
 const poe = require('poe-util');
 
 //example
@@ -67,6 +67,34 @@ Returns an array of the characters items and includes full item properties.
 
 ```
 Returns an array current ladder statistics including full character information.
+```
+
+**getPassiveSkills(account: string, character: string) (Promise)**
+
+> account: Your Path of Exile account. (MUST BE PUBLIC)
+
+> character: Your Path of Exile character that is linked to the account provided.
+
+```
+Returns an array of IDs where each ID is equal to a node in the characters skill tree.
+```
+
+**getItemStats() (Promise)**
+
+```
+Returns an array with suffixes, prefixes and other mods for items.
+```
+
+**getStaticData() (Promise)**
+
+```
+Returns an array with static data such as images for maps, currency, map tiers, etc.
+```
+
+**getItemData() (Promise)**
+
+```
+Returns an array with categories, where each category is filled with the names and types of items.
 ```
 
 ## Fetching Items
