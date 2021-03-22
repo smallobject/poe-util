@@ -141,3 +141,12 @@ Returns an object with the unique data of the item searched, includes queryId an
 ```
 Returns an array of the items searched, includes seller information, item and others.
 ```
+
+# Roadmap
+
+- [x] Add item fetching and pagination.
+- [x] Add tests for the all functions.
+- [ ] Improve pagination and item fetching.
+- [ ] Implement all availble endpoints of the API as functions.
+- [ ] Improve error handlding
+- [ ] Convert package to Typescript.
